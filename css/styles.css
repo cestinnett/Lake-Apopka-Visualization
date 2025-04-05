@@ -143,3 +143,7 @@ footer {
         width: 100%; /* Make each item take up the full width */
     }
 }
+/* Temporarily hide all images in image-text-sections */
+#image-text-sections .image-text-section img {
+    display: none; /* This will hide all images inside image-text-section */
+}
