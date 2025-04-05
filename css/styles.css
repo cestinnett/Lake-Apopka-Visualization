@@ -1,0 +1,142 @@
+/* Basic reset to remove margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* White background for the page */
+    color: #333; /* Standard text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section with Blue Background */
+header {
+    background-color: #005f73; /* Blue background to reflect water theme */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for better contrast */
+    margin: 0;
+}
+
+/* Intro Section */
+#intro {
+    padding: 40px 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Cards Section */
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #dde1e4;
+    border-radius: 8px;
+    padding: 20px;
+    width: 48%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #005f73; /* Deep blue like water */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    font-size: 1em;
+}
+
+.card a {
+    color: #0096c7; /* Lighter blue for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Tableau Map Placeholder */
+#tableau-map-placeholder {
+    background-color: #0096c7; /* Lighter blue */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Image and Text Sections */
+#image-text-sections {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.image-text-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.image-text-section img {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-text-section div {
+    width: 48%;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.image-text-section h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Footer or Extra Styling for the Page */
+footer {
+    background-color: #005f73; /* Matching blue color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive Design: For smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .image-text-section {
+        flex-direction: column; /* Stack images and text on small screens */
+    }
+
+    .image-text-section img,
+    .image-text-section div {
+        width: 100%;
+    }
+}
